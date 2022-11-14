@@ -5,17 +5,17 @@ let score2 = 0;
 let ranNum;
 let playerTurn = 'player1';
 
-/*
 const player1Title = document.querySelector('#name--0');
 const player2Title = document.querySelector('#name--1');
 
-const player1Name = prompt('Player 1: Enter your name ');
-const player2Name = prompt('Player2: Enter your name');
+function showPlayerName() {
+  const player1Name = prompt('Player 1: Enter your name ');
+  const player2Name = prompt('Player2: Enter your name');
+  player1Title.textContent = player1Name;
+  player2Title.textContent = player2Name;
+}
 
-player1Title.textContent = player1Name;
-player2Title.textContent = player2Name;
-
-*/
+showPlayerName();
 
 // Roll Dice function
 function rollDice() {
@@ -122,6 +122,7 @@ function newGame() {
   player2Section.classList.remove('player--winner');
   player1Section.removeAttribute('style');
   player2Section.removeAttribute('style');
+  showPlayerName();
   /*
   player1Title.textContent = player1Name;
   player2Title.textContent = player2Name;
