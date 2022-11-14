@@ -99,14 +99,14 @@ function holdScoreBtn() {
 
   if (
     Number(mainScore0.textContent) > Number(mainScore1.textContent) &&
-    Number(mainScore0.textContent) >= 30
+    Number(mainScore0.textContent) >= 50
   ) {
     player1Section.classList.add('player--winner');
     player1Section.removeAttribute('style');
     playerTurn = 'Game over';
   } else if (
     Number(mainScore1.textContent) > Number(mainScore0.textContent) &&
-    Number(mainScore1.textContent) >= 30
+    Number(mainScore1.textContent) >= 50
   ) {
     playerTurn = 'Game over';
     player2Section.classList.add('player--winner');
