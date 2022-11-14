@@ -11,8 +11,10 @@ const player2Title = document.querySelector('#name--1');
 function showPlayerName() {
   const player1Name = prompt('Player 1: Enter your name ');
   const player2Name = prompt('Player2: Enter your name');
-  player1Title.textContent = player1Name;
-  player2Title.textContent = player2Name;
+  if (player1Name && player2Name) {
+    player1Title.textContent = player1Name;
+    player2Title.textContent = player2Name;
+  }
 }
 
 showPlayerName();
