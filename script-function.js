@@ -11,8 +11,9 @@ const player2Title = document.querySelector('#name--1');
 function showPlayerName() {
   const player1Name = prompt('Player 1: Enter your name ');
   const player2Name = prompt('Player2: Enter your name');
-  if (player1Name && player2Name) {
+  if (player1Name) {
     player1Title.textContent = player1Name;
+  } else if (player2Name) {
     player2Title.textContent = player2Name;
   }
 }
@@ -125,8 +126,4 @@ function newGame() {
   player1Section.removeAttribute('style');
   player2Section.removeAttribute('style');
   showPlayerName();
-  /*
-  player1Title.textContent = player1Name;
-  player2Title.textContent = player2Name;
-  */
 }
