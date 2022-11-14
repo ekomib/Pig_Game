@@ -13,7 +13,8 @@ function showPlayerName() {
   const player2Name = prompt('Player2: Enter your name');
   if (player1Name) {
     player1Title.textContent = player1Name;
-  } else if (player2Name) {
+  }
+  if (player2Name) {
     player2Title.textContent = player2Name;
   }
 }
